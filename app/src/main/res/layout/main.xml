@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/purple_gradient"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:onClick="openApp">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ucarelogorb" android:id="@+id/imageView11"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <Button
+            android:text="Get Started"
+            android:layout_width="327dp"
+            android:layout_height="68dp" android:id="@+id/getStartedbutton"
+            android:backgroundTint="#000000" app:cornerRadius="50dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintBottom_toBottomOf="parent" android:onClick="openApp"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.229"
+            android:textSize="18dp" android:textAllCaps="false"/>
+    <TextView
+            android:text=" Where care meets convenience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tagline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.4" android:textSize="17sp"
+            android:textColor="#000000" app:layout_constraintBottom_toTopOf="@+id/getStartedbutton"
+            app:layout_constraintTop_toBottomOf="@+id/ucare" android:fontFamily="sans-serif"
+            android:textStyle="bold|italic"/>
+    <TextView
+            android:text="UCARE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/ucare"
+            app:layout_constraintStart_toStartOf="@+id/imageView11" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11" android:textSize="34sp"
+            app:layout_constraintVertical_bias="0.932" android:textColor="#000000"
+            android:fontFamily="sans-serif-black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

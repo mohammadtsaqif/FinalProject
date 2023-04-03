@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="UTP_yellow">#F4BC33</color>
+    <color name="default_background">#b7dcf4</color>
+    <color name="UTP_blue">#6F8EC2</color>
+
+    <color name="groceryBg">#FFDA84</color>
+    <color name="groceryBg2">#454727</color>
+    <color name="groceryBg3">#A1AFA0</color>
+    <color name="olive">#454727</color>
+    <color name="duitnow">#FFE51A5F</color>
+</resources>

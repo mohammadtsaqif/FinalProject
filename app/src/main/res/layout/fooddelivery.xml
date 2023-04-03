@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FoodDelivery">
+
+    <ImageView
+            android:layout_width="416dp"
+            android:layout_height="278dp" app:srcCompat="@drawable/spageeti" android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+    <ImageView
+            android:layout_width="415dp"
+            android:layout_height="276dp" app:srcCompat="@drawable/fries" android:id="@+id/imageView13"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+            android:layout_width="415dp"
+            android:layout_height="520dp" app:srcCompat="@drawable/bottom_background_pink"
+            android:id="@+id/imageView16" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"/>
+    <Button
+            android:text="Get Started"
+            android:layout_width="200dp"
+            android:layout_height="80dp" android:id="@+id/btn_getstarted_fooddelivery"
+            android:textColor="#FFFFFF" android:backgroundTint="#EF2D56" app:cornerRadius="50dp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8" android:layout_marginTop="36dp"
+            android:textSize="16sp" app:layout_constraintHorizontal_bias="0.433"
+            android:onClick="openFoodDeliveryNextPage"/>
+    <TextView
+            android:layout_width="279dp"
+            android:layout_height="136dp" android:id="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView16" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="76dp"
+            android:text="Easy Delivery for Order Your Fav Food"
+            android:textColor="#000000" android:textStyle="bold" android:textSize="34sp" android:gravity="center"/>
+    <TextView
+            android:text="Get your delicious food and fast delivery in one app "
+            android:layout_width="230dp"
+            android:layout_height="69dp" android:id="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            android:layout_marginTop="12dp" app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7" android:gravity="center"
+            app:layout_constraintHorizontal_bias="0.538"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Menu"
+        android:background="#F47474">
+
+    <TextView
+            android:text="What do you want to eat?"
+            android:layout_width="303dp"
+            android:layout_height="99dp" android:id="@+id/textView14"
+            android:textColor="#000000" android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17" android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView17"
+            app:layout_constraintStart_toStartOf="@+id/imageView17" app:layout_constraintHorizontal_bias="0.039"
+            android:gravity="fill_vertical"/>
+    <TextView
+            android:text="Popular"
+            android:layout_width="88dp"
+            android:layout_height="34dp" android:id="@+id/textView16"
+            android:textColor="#000000" android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="77dp" app:srcCompat="@drawable/upper_pink" android:id="@+id/imageView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:layout_width="302dp"
+            android:layout_height="48dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/imageView17" app:layout_constraintEnd_toEndOf="@+id/imageView17"
+            android:hint="Please list your order here"
+            app:layout_constraintHorizontal_bias="0.488"
+            android:background="@android:drawable/editbox_background_normal" android:backgroundTint="#EF2D56"
+            android:textColorHint="#FFFFFF"/>
+    <ImageView
+            android:layout_width="377dp"
+            android:layout_height="226dp" app:srcCompat="@drawable/ramai" android:id="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="Send to: "
+            android:layout_width="77dp"
+            android:layout_height="36dp" android:id="@+id/textView17"
+            android:textColor="#000000" android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22"
+            app:layout_constraintStart_toStartOf="@+id/imageView22"
+            app:layout_constraintEnd_toEndOf="@+id/imageView22" android:layout_marginTop="20dp"
+            app:layout_constraintHorizontal_bias="0.036" android:background="@drawable/custom1"
+            android:gravity="center"/>
+    <EditText
+            android:layout_width="224dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edittextVillagenumber"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#EF2D56" app:layout_constraintTop_toBottomOf="@+id/imageView22"
+            app:layout_constraintStart_toEndOf="@+id/textView17" app:layout_constraintEnd_toEndOf="@+id/imageView22"
+            android:layout_marginTop="20dp" app:layout_constraintHorizontal_bias="0.138"
+            android:hint="Enter you village number" android:textColorHint="#FDFDFD" android:textSize="14sp"
+            android:gravity="center"/>
+    <ImageView
+            android:layout_width="412dp"
+            android:layout_height="88dp" app:srcCompat="@drawable/bottom_background"
+            android:id="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+    />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnOrdermenu"
+            app:cornerRadius="50dp"
+            android:backgroundTint="#FFC107"
+            android:text="Order Now" android:textAllCaps="true" android:textColor="#000000" android:textStyle="bold"
+            android:onClick="openMenuorderFull"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView23"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

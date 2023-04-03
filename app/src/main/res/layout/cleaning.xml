@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Cleaning" android:background="#6C3BCA">
+    <ImageView
+            android:layout_width="51dp"
+            android:layout_height="45dp" app:srcCompat="@drawable/cleaning" android:id="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <ImageView
+            android:layout_width="46dp"
+            android:layout_height="40dp" app:srcCompat="@drawable/cleaning" android:id="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:text="Washing"
+            android:layout_width="141dp"
+            android:layout_height="58dp" android:id="@+id/washing2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:textColor="#FFFFFF" android:textSize="34sp"
+            android:textStyle="bold" android:fontFamily="@font/carter_one"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout" android:layout_marginBottom="4dp"/>
+    <ImageView
+            android:layout_width="89dp"
+            android:layout_height="65dp" app:srcCompat="@drawable/spray" android:id="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.234"
+            android:cropToPadding="false" android:paddingLeft="-10dp"
+            android:paddingRight="-20dp" app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            android:layout_marginBottom="4dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="411dp"
+            android:layout_height="559dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/constraintLayout">
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/bottom_background"
+                android:id="@+id/imageView4" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="1.0"/>
+        <TextView
+                android:text="Welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
+                app:layout_constraintHorizontal_bias="0.087" android:textColor="#000000" android:textStyle="bold"
+                android:textSize="30dp"/>
+        <TextView
+                android:text="To assist you better, how many hours do you need for the service?"
+                android:layout_width="294dp"
+                android:layout_height="77dp" android:id="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="@+id/textView" android:layout_marginTop="16dp"
+                app:layout_constraintHorizontal_bias="0.055" android:textColor="#938A8A" android:textSize="16sp"
+                android:backgroundTint="#E3DAEA" android:background="?android:attr/fastScrollPreviewBackgroundLeft"
+                android:gravity="center_vertical"/>
+        <ImageView
+                android:layout_width="225dp"
+                android:layout_height="195dp" app:srcCompat="@drawable/cleaning_people"
+                android:id="@+id/imageView9" app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2" app:layout_constraintHorizontal_bias="0.0"/>
+        <Button
+                android:layout_width="108dp"
+                android:layout_height="106dp" android:id="@+id/btn_cleaning_room"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                android:layout_marginTop="32dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp" android:backgroundTint="#BF9ACA" app:icon="@drawable/cleaning"
+                app:iconSize="65dp" app:cornerRadius="15dp" android:text="Room Cleaning"
+                android:textSize="10sp" android:textStyle="bold" android:textColor="#000000"
+                app:iconGravity="textTop" android:paddingLeft="0dp" android:paddingRight="0dp"
+                android:onClick="calculate_cleaning"
+        />
+        <Button
+                android:layout_width="108dp"
+                android:layout_height="106dp" android:id="@+id/btn_car_washing"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#D0CEBA" app:icon="@drawable/ehailing"
+                app:iconSize="65dp" app:cornerRadius="15dp"
+                app:layout_constraintStart_toEndOf="@+id/btn_cleaning_room" android:layout_marginStart="20dp"
+                app:iconGravity="textTop" android:text="Car Wash" android:textColor="#000000"
+                android:gravity="bottom|center" android:textSize="10sp" android:textStyle="bold"
+                android:onClick="calculate_carwashing"
+        />
+        <Button
+                android:layout_width="108dp"
+                android:layout_height="106dp" android:id="@+id/btn_motor_washing"
+                android:backgroundTint="#7EBC89" app:icon="@drawable/motor"
+                app:iconSize="65dp" app:cornerRadius="15dp"
+                android:text="Motor Wash" android:textColor="#000000"
+                android:gravity="center_horizontal|fill" android:textSize="10sp" android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/btn_car_washing" android:layout_marginStart="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" app:iconGravity="textTop"
+                android:onClick="calculate_motorwashing" app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                android:layout_marginTop="32dp"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/totalCost"
+                app:layout_constraintTop_toBottomOf="@+id/btn_car_washing"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.34"
+                android:textSize="20sp" android:textStyle="bold" app:layout_constraintStart_toEndOf="@+id/textView10"
+                android:layout_marginStart="4dp"/>
+        <TextView
+                android:text="Total: RM "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/btn_car_washing"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="132dp" app:layout_constraintVertical_bias="0.34" android:textSize="20sp"
+                android:textStyle="bold" android:id="@+id/textView10"/>
+        <EditText
+                android:layout_width="111dp"
+                android:layout_height="60dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edittextHours"
+                android:hint="Enter here." android:textColorHint="#000000"
+                android:backgroundTint="#E3DAEA" android:background="@android:drawable/editbox_background_normal"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="36dp" app:layout_constraintHorizontal_bias="0.322"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9" app:layout_constraintVertical_bias="0.303"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
